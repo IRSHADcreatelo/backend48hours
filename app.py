@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 # Configure CORS to allow requests from Vercel frontend (update with actual frontend URL after deployment)
-CORS(app, resources={r"/api/*": {"origins": ["https://your-frontend.vercel.app", "http://localhost:8000"]}})
+CORS(app, resources={r"/api/*": {"origins": ["https://frontend48.vercel.app/", "http://localhost:8000"]}})
 
 # Configure Gemini API
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
